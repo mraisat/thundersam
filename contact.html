@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>thundersam</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">hundersam</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="firebg.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+     <h3><br><br>want to<br>know more?</h3> 
+        <p>send us a message! ⤵</p>
+        <form action="https://formsubmit.co/mtraisa2.0@gmail.com" method="POST">
+     <input type="text" name="name" placeholder="Your Name" required>
+     <input type="email" name="email" placeholder="Your Email" required><br><br><textarea placeholder="Your Message" class="form-control" name="message" rows="5" wrap="soft" required style="width: 600px; padding: 20px;"></textarea><br><br>
+     <button type="submit">Send</button>
+</form>
+        
+        
+    </div>
+    
+      <br>
+    <ul class="social">
+      <li><a href="https://mobile.twitter.com/ThunderSamGfx"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://instagram.com/gfxbythundy?utm_medium=copy_link"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="process.html">Process</a></li>
+      <li><a href="https://thundersamyt.wixsite.com/my-site">Portfolio</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="https://docs.google.com/document/d/1mQOHSmxJtJ-xqfPdKAmNWMwLY9Pd4lL-WsMDfxz048A/edit?usp=sharing">Copyrights</a></li>
+    </ul>
+  </div>
+    <script>
+     const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>

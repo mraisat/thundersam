@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/mismo');
+@import url('http://fonts.cdnfonts.com/css/gigantic-fs');
+@import url('http://fonts.cdnfonts.com/css/aux');
+@import url('http://fonts.cdnfonts.com/css/modern-machine');
+@import url('http://fonts.cdnfonts.com/css/arvo-2');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gigantic FS', sans-serif;
+  font-weight: 400;
+                                                
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 5;
+  width: 100%;
+  padding: 60px 50px;
+  z-index: 900;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  font-weight: 700;
+  left: 2;
+  letter-spacing: px;
+  color: #fff;
+  cursor: pointer;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.center-texts{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo {
+  width: 160px;
+  height: auto;
+  margin-right: -31px;
+}
+
+.firsttitle {
+  font-size: 20px;
+}
+.toggle
+{
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 80px;
+  background: url(thunderlogo.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(xmark.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  left: 250px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  mix-blend-mode: overlay;
+}
+.overlay2
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  mix-blend-mode: overlay;
+    opacity: 0.3;
+}
+.text
+{
+  z-index: 10;
+}
+.text form
+{
+  display: inline-block;
+  font-size: 1.5em;
+  background: dark;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.3s;  
+}
+.containerwithimg {
+  overflow: hidden; 
+    display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+.aboutimg {
+  float: left; 
+  margin-left: 0px;
+    margin-right:30px;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input:focus {
+  background-color: lightblue;
+}
+button {
+  display: inline-block;
+  font-size: 15;
+  background: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+button:hover {
+  font-weight: 900;
+  background-color: black;
+  color: white;
+}
+.text h1
+{
+  padding:0px;
+  font-size: 4em;
+  font-weight: 400;
+  color: antiquewhite;
+  line-height: 1em;
+  letter-spacing: -2px;
+}
+.text h2
+{
+  font-size: 9em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  letter-spacing: -2px;
+}
+.text h3
+{
+  padding:0px;
+  font-size: 3em;
+  font-weight: 10;
+  color: darkcyan;
+  line-height: 1em;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #D3D3D3;
+  margin: 20px 0;
+  font-weight: 300;
+  max-width: 1000px;
+    text-align: right;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+.text a:hover
+{
+  font-weight: 900;
+  background-color: black;
+  color: white;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: darkred; 
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
